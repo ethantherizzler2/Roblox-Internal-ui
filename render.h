@@ -1,6 +1,7 @@
 #pragma once
 #include <windows.h>
 #include <d3d11.h>
+#include "offsets.hpp"
 #include <../dependencies/imgui/imgui.h>
 #include <../dependencies/imgui/backends/imgui_impl_dx11.h>
 #include <../dependencies/imgui/backends/imgui_impl_win32.h>
