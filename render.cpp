@@ -30,7 +30,7 @@ bool IsRenderJob(uintptr_t Job) {
         name_cstr = reinterpret_cast<const char*>(name_base);
         if (name_cstr && strcmp(name_cstr, "RenderJob") == 0) return true;
     }
-    __except (EXCEPTION_EXECUTE_HANDLER) {} // if your using deni injector w seh !
+    __except (EXCEPTION_EXECUTE_HANDLER) {} // watch for this part because it can cause crash i added safe check so doesnt crash!
     return false;
 }
 
