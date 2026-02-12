@@ -9,17 +9,6 @@
 
 extern LRESULT ImGui_ImplWin32_WndProcHandler(HWND hWnd, UINT msg, WPARAM wParam, LPARAM lParam);
 
-ID3D11Device* rbx::render::device = nullptr;
-ID3D11DeviceContext* rbx::render::device_context = nullptr;
-IDXGISwapChain* rbx::render::swap_chain = nullptr;
-ID3D11RenderTargetView* rbx::render::render_target_view = nullptr;
-rbx::render::present_fn rbx::render::original_present = nullptr;
-rbx::render::resize_buffers_fn rbx::render::original_resize_buffers = nullptr;
-WNDPROC rbx::render::original_wnd_proc = nullptr;
-HWND rbx::render::our_window = nullptr;
-bool rbx::render::is_init = false, rbx::render::draw = false;
-float rbx::render::dpi_scale = 1.f;
-
 namespace rbx {
     class render {
     public:
