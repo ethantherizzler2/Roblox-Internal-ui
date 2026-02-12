@@ -6,6 +6,7 @@
 
 namespace Offsets
 {
+    const uintptr_t RawScheduler = REBASE(0x7D33708);
     const uintptr_t Print = REBASE(0x1737F90);
 
     namespace render {
