@@ -20,7 +20,7 @@ namespace Offsets
         const uintptr_t renderview = 0x218; // most of the time the same
         const uintptr_t DeviceD3D11 = 0x8; // same
         const uintptr_t VisualEngine = 0x10; // same
-        const uintptr_t Swapchain = 0xD0;  // same
+        const uintptr_t Swapchain = 0xD0;  // nvm this can change aswell
 
     }
 }
